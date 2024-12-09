@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5DC2DA752D077FD70052A541 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC2DA742D077FD70052A541 /* Markdown */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5DC2DA552D077F7E0052A541 /* MarkdownEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkdownEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DC2DA752D077FD70052A541 /* Markdown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = MarkdownEditor;
 			packageProductDependencies = (
+				5DC2DA742D077FD70052A541 /* Markdown */,
 			);
 			productName = MarkdownEditor;
 			productReference = 5DC2DA552D077F7E0052A541 /* MarkdownEditor.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 5DC2DA4C2D077F7E0052A541;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5DC2DA732D077FD70052A541 /* XCRemoteSwiftPackageReference "swift-markdown" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5DC2DA562D077F7E0052A541 /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DC2DA732D077FD70052A541 /* XCRemoteSwiftPackageReference "swift-markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftlang/swift-markdown?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5DC2DA742D077FD70052A541 /* Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DC2DA732D077FD70052A541 /* XCRemoteSwiftPackageReference "swift-markdown" */;
+			productName = Markdown;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5DC2DA4D2D077F7E0052A541 /* Project object */;
 }
